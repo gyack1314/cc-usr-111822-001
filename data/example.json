@@ -1,90 +1,39 @@
 {
-  "known_at": [
-    "2026-08-01T00:00:00+00:00",
-    "2026-09-01T00:00:00+00:00"
-  ],
+  "known_at": "2026-10-08T00:00:00+08:00",
   "documents": [
     {
-      "source": "观测机构",
-      "document_id": "observation-original",
+      "kind": "batch",
+      "id": "lot-01",
       "revision": "r1",
-      "received_at": "2026-07-30T00:00:00+00:00",
-      "records": [
-        {
-          "kind": "observation",
-          "id": "obs-1",
-          "revision": "r1",
-          "valid_from": "2026-07-01",
-          "payload": {
-            "metric": "yield",
-            "region": "line-A",
-            "unit": "资料单位",
-            "value": 81
-          }
-        }
-      ]
+      "received_at": "2026-10-06T12:00:00+08:00",
+      "payload": {
+        "line": "A",
+        "product": "P1",
+        "supplier": "S1",
+        "shift": "2026-10-05-AM",
+        "produced": 100,
+        "scrapped": 3
+      }
     },
     {
-      "source": "参照机构",
-      "document_id": "reference",
+      "kind": "inspection",
+      "id": "lot-01",
       "revision": "r1",
-      "received_at": "2026-07-29T00:00:00+00:00",
-      "records": [
-        {
-          "kind": "reference",
-          "id": "ref-1",
-          "revision": "r1",
-          "valid_from": "2026-07-01",
-          "payload": {
-            "metric": "yield",
-            "region": "line-A",
-            "unit": "资料单位",
-            "value": 80
-          }
-        }
-      ]
+      "received_at": "2026-10-06T12:00:00+08:00",
+      "payload": {
+        "reworked": 7
+      }
     },
     {
-      "source": "业务部门",
-      "document_id": "rule",
+      "kind": "cost",
+      "id": "P1-2026-10",
       "revision": "r1",
-      "received_at": "2026-07-28T00:00:00+00:00",
-      "records": [
-        {
-          "kind": "rule",
-          "id": "rule-1",
-          "revision": "r1",
-          "valid_from": "2026-07-01",
-          "payload": {
-            "metric": "yield",
-            "region": "line-A",
-            "unit": "资料单位",
-            "threshold": 4,
-            "direction": "above",
-            "action": "复核"
-          }
-        }
-      ]
-    },
-    {
-      "source": "观测机构",
-      "document_id": "observation-revised",
-      "revision": "r1",
-      "received_at": "2026-08-15T00:00:00+00:00",
-      "records": [
-        {
-          "kind": "observation",
-          "id": "obs-1",
-          "revision": "r2",
-          "valid_from": "2026-07-01",
-          "payload": {
-            "metric": "yield",
-            "region": "line-A",
-            "unit": "资料单位",
-            "value": 89
-          }
-        }
-      ]
+      "received_at": "2026-10-06T12:00:00+08:00",
+      "payload": {
+        "product": "P1",
+        "period": "2026-10",
+        "unit_cost": 12
+      }
     }
   ]
 }
